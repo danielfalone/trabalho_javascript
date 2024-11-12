@@ -1,0 +1,38 @@
+/* Estilização do sistema de áudio */
+
+.audio {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.audio-player {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: rgb(214, 208, 208);
+    color: #062c54;
+}
+
+button:hover {
+    background-color: #062c54;
+    color: white;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}

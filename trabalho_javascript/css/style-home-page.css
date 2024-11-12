@@ -1,0 +1,77 @@
+/* Estilização da página inicial */
+
+/* Estilo do body */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #d9dfe6, #9ab8d8); /* Fundo degrade */
+}
+
+/* Estilo do texto principal */
+.main-content {
+    color: #062c54;
+    font-weight: 600;
+    text-shadow: 0 4px 8px rgba(44, 118, 150, 0.1); /* Sombra */
+}
+
+/* Estilos para barra de menu principal da página inicial */
+.menu-container {
+    width: 30%; /* Define o comprimento do menu */
+    margin: 0% 23cm; /* Define a posição do menu na página */
+}
+
+/* Estilo da lista do menu */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Espaça os itens igualmente */
+    background-color: white;
+    border-radius: 0px 0px 10px 10px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(47, 74, 86, 0.5); /* Sombra */
+}
+
+/* Estilo dos itens do menu */
+.menu li {
+    padding: 18px 18px; /* Define a largura do menu */
+}
+
+/* Estilo dos links do menu */
+.menu li a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: #062c54;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 22px 22px;
+    text-transform: uppercase;
+    border-radius: 0px 0px 0px 0px; /* Borda arredondada */
+    transition: background-color 0.6s; /* Transição ao passar o mouse */
+}
+
+/* Efeito de hover */
+.menu li a:hover {
+    background-color: #062c54; /* Cor ao passar o mouse */
+    padding: 22px;
+    color: white;
+    font-size: 19px;
+}
+
+/* Estilos para barra de menu principal da tela cadastro */
+.menu-container-register {
+    width: 10%; /* Define o comprimento do menu */
+    margin: 0% 27cm; /* Define a posição do menu na página */
+}
+
+/* Estilos para barra de menu principal da tela login */
+.menu-container-login {
+    width: 10%; /* Define o comprimento do menu */
+    margin: 0% 27cm; /* Define a posição do menu na página */
+}
+
+/* Estilos para barra de menu principal da tela suporte */
+.menu-container-support {
+    width: 10%; /* Define o comprimento do menu */
+    margin: 0% 27cm; /* Define a posição do menu na página */
+}

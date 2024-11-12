@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/style-home-page.css">
+    <link rel="stylesheet" href="/css/style-form.css">
+    <link rel="stylesheet" href="/css/style-chatbot.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Imagem e texto da Navbar -->
+    <nav class="navbar navbar-light shadow-sm" style="background-color: white">
+        <a class="navbar-brand" href="/html/index.html" style="font-size: 25px; color: #062c54; font-weight: 500;">
+        <img src="/img/img1.png" width="46" height="46" class="d-inline-block align-top" alt="">
+         Minha Logo
+        </a>
+    </nav>
+
+    <!-- Barra de menu -->
+    <div class="menu-container-register">
+      <ul class="menu">
+          <li><a href="/html/index.html">Início</a></li>
+      </ul>
+    </div>
+
+    <br>
+
+    <!-- Formulário de cadastro -->
+    <form id="meuFormulario" class="needs-validation" novalidate>
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <label for="validationTooltip01" class="col-sm-2 col-form-label">Primeiro Nome</label>
+            <input type="text" class="form-control" id="validationTooltip01" placeholder="Nome" required>
+            <div class="valid-tooltip" style="left: 200px;">
+              Tudo certo!
+            </div>
+            <div class="invalid-tooltip" style="left: 200px;">
+              Por favor, informe o seu primeiro nome.
+            </div>
+          </div>
+          <br><br>
+          <div class="col-sm-12">
+            <label for="validationTooltip02" class="col-sm-2 col-form-label">Sobrenome</label>
+            <input type="text" class="form-control" id="validationTooltip02" placeholder="Sobrenome" required>
+            <div class="valid-tooltip" style="left: 200px;">
+              Tudo certo!
+            </div>
+            <div class="invalid-tooltip" style="left: 200px;">
+              Por favor, informe o seu sobrenome.
+            </div>
+          </div>
+          <br><br>
+          <div class="col-sm-12">
+            <label for="validationTooltip03" class="col-sm-2 col-form-label">Telefone</label>
+            <input type="tel" class="form-control" id="validationTooltip03" placeholder="Telefone" required>
+            <div class="valid-tooltip" style="left: 200px;">
+              Tudo certo!
+            </div>
+            <div class="invalid-tooltip" style="left: 200px;">
+              Por favor, informe o DDD e o número.
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <label for="validationTooltipUsername" class="col-sm-2 col-form-label">Usuário</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+              </div>
+              <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Usuário" aria-describedby="validationTooltipUsernamePrepend" required>
+              <div class="valid-tooltip" style="left: 200px;">
+                Tudo certo!
+              </div>
+              <div class="invalid-tooltip" style="left: 200px;">
+                Por favor, escolha um usuário válido e único.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <label for="validationTooltip04" class="col-sm-2 col-form-label">E-mail</label>
+            <input type="email" class="form-control" id="validationTooltip04" placeholder="exemplo@gmail.com" required>
+            <small id="emailHelp" class="form-text text-muted" style="margin: 1%;">O endereço de e-mail é composto pelo nome do usuário e pelo domínio, separado pelo símbolo @. <br>Por exemplo: contato@task.com.br</small>
+            <div class="valid-tooltip" style="left: 200px;">
+              Tudo certo!
+            </div>
+            <div class="invalid-tooltip" style="left: 200px;">
+              Por favor, informe um e-mail válido.
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <label for="validationTooltip05" class="col-sm-2 col-form-label">Senha</label>
+            <input type="password" class="form-control" id="validationTooltip05" placeholder="Senha" required>
+            <div class="valid-tooltip" style="left: 200px;">
+              Tudo certo!
+            </div>
+            <div class="invalid-tooltip" style="left: 200px;">
+              Por favor, informe uma senha.
+            </div>
+          </div>
+        </div>
+        <button id="confirmBtn" class="btn confirm" type="submit" style="font-size: 20px;">ENVIAR</button>
+        <button class="btn cancel" type="cancel" onclick="limparCampos()" style="font-size: 20px;">CANCELAR</button>
+      </form>
+
+    <!-- Imagem principal -->
+    <img src="/img/img2.png" width="1000" height="1000" style="margin: 0% 15cm ;" alt="">
+
+    <!-- Botão de Ajuda -->
+    <button id="helpButton">?</button>
+
+    <!-- Janela de Chat -->
+    <div id="chatWindow">
+        <div id="chatHeader">Chat de Ajuda</div>
+        <div id="chatMessages">
+        <p><strong>Bot:</strong> Olá! Como posso ajudar você hoje?</p>
+        </div>
+        <div id="chatInputContainer">
+        <input type="text" id="chatInput" placeholder="Digite sua mensagem...">
+        <button id="sendButton">Enviar</button>
+        </div>
+    </div>
+
+    <script src="/js/register.js"></script>
+    <script src="/js/chatbot.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

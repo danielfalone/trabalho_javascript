@@ -1,0 +1,113 @@
+/* Estilização da janela flutuante que notifica, habilita e redireciona para outra página */
+
+/* Container principal */
+.container-flutuante {
+    left: 50;
+    position: fixed; /* Fixa o elemento em relação à janela */
+    bottom: 130px; /* Posição em relação à parte inferior */
+    right: 500px; /* Posição em relação à parte direita */
+    width: 500px; /* Comprimento do container */
+    padding: 2px; /* Expessura da borda */
+    background-color: #062c54; /* Cor da borda */
+    color: #062c54; /* Cor do texto <p> */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    z-index: 1000; /* Garantir que esteja acima de outros elementos */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    padding: 30px; /* Define a largura da modal */
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+}
+
+/* Título do modal */
+.modal-content h4 {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    color: #062c54;
+}
+
+/* Botões de ação do modal */
+.modal-actions {
+    margin-top: 10px;
+}
+
+/* Estilo do botão para mostrar o modal */
+button {
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.6s;
+}
+
+button:hover {
+    background-color: #062c54;
+}
+
+.btn {
+    margin: 0 10px; /* Espaçamento entre botões */
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.confirm {
+    background-color: #4CAF50;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.cancel {
+    background-color: #f44336;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.close {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    top: 7%;
+    left: 90%;
+}
+
+/* Estilização da janela flutuante que notifica e direciona para as funções cadastrar ou logar */
+
+.register {
+    background-color: #062c54;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.register:hover {
+    background-color: #4CAF50;
+}
+
+.login {
+    background-color: #062c54;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.login:hover {
+    background-color: #4CAF50;
+}
+
+.container-flutuante-audio {
+    left: 50;
+    position: fixed; /* Fixa o elemento em relação à janela */
+    bottom: 45px; /* Posição em relação à parte inferior */
+    right: 500px; /* Posição em relação à parte direita */
+    width: 500px; /* Comprimento do container */
+    padding: 2px; /* Expessura da borda */
+    background-color: #062c54; /* Cor da borda */
+    color: #062c54; /* Cor do texto <p> */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    z-index: 1000; /* Garantir que esteja acima de outros elementos */
+}

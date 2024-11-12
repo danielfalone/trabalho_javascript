@@ -1,0 +1,78 @@
+/* Estilização do chatbot */
+
+/* Estilo do botão de ajuda */
+#helpButton {
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+    background-color: #062c54;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estilo da janela de chat */
+  #chatWindow {
+    display: none; /* Inicia oculto */
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  /* Cabeçalho do chat */
+  #chatHeader {
+    background-color: #062c54;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  /* Área de mensagens */
+  #chatMessages {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  /* Área de entrada de texto */
+  #chatInputContainer {
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+
+  #chatInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  #sendButton {
+    background-color: #062c54;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
